@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Esta es la pagina que congela el tiempo
+    <p style="color: blueviolet; font-size: x-large;">Mi nombre es{{nombre}}</p>
+    <p style="color: brown; font-size: medium;">Mi apellido es{{apellido}}</p>
+    <b><p style="color: pink; font-style:normal; font-weight: bold;">Este template fue creado el {{fecha }}</p></b>
+    <h3>Notas del departamento de economía</h3>
+    <p>
+        {% for n in notas %} 
+        {% if n < 2 %}
+            <p style="color:red"> NOTA MALA: {{n}}</p>
+        {% else %} <p style="color: green"> NOTA BUENA {{n}}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
